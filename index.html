@@ -50,14 +50,16 @@ header .btn{min-height:44px;padding:0 20px;font-size:15px}
 .pin i{width:18px;height:18px;border-radius:50%;background:var(--mint);border:3px solid #fff;box-shadow:0 0 0 6px rgba(34,208,143,.4);flex:none}
 .pin em{font:700 13px/1.25 var(--f);font-style:normal;background:#fff;color:#0B2A1E;padding:6px 10px;border-radius:8px;box-shadow:0 6px 16px rgba(0,0,0,.25);white-space:nowrap}
 .pin small{display:none;margin-top:3px;font-weight:400;color:#4a5f55;white-space:normal;max-width:170px}.pin:hover,.pin:focus-visible{z-index:3}.pin:hover small,.pin:focus-visible small{display:block}
-.trust{background:#072017;padding:26px 0 28px;overflow:hidden}.trust p{display:none}.trust .wrap{width:100%;margin:0}
-.mq{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-.mq div{display:flex;gap:72px;align-items:center;width:max-content;animation:mq 35s linear infinite}
+.trust{background:#072017;padding:28px 0 32px;overflow:hidden}.trust .wrap{width:100%;margin:0}
+.mq{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.mq div{display:flex;gap:64px;align-items:center;width:max-content;animation:mq 32s linear infinite}
 .mq div:hover{animation-play-state:paused}
-.partner-item{display:inline-flex;align-items:center;gap:14px;text-decoration:none;opacity:.82;transition:opacity .2s,transform .2s;filter:drop-shadow(0 4px 12px rgba(0,0,0,.4))}
-.partner-item:hover{opacity:1;transform:translateY(-2px)}
-.partner-item img{height:54px;max-width:160px;width:auto;object-fit:contain;display:block}
-.partner-item span{color:#E6F3EC;font-weight:700;font-size:16px;letter-spacing:-.01em;white-space:nowrap}
+.partner-item{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;text-decoration:none;transition:transform .2s,opacity .2s;flex:none}
+.partner-item:hover{transform:translateY(-3px)}
+.partner-item:hover span{opacity:1;color:#fff}
+.partner-item img{height:76px;max-width:180px;width:auto;object-fit:contain;display:block;filter:drop-shadow(0 6px 14px rgba(0,0,0,.45));transition:transform .2s}
+.partner-item:hover img{transform:scale(1.05)}
+.partner-item span{color:#9CC1AF;opacity:.75;font-weight:600;font-size:12.5px;letter-spacing:.02em;white-space:nowrap;transition:opacity .2s,color .2s}
 @keyframes mq{to{transform:translateX(-50%)}}
 .diag{display:block;width:100%;height:clamp(50px,7vw,100px);margin-top:-1px}.diag.up{transform:scaleY(-1);margin-top:0;margin-bottom:-1px}.diag.r{transform:scaleX(-1)}.diag.up.r{transform:scale(-1,-1)}
 section{padding:90px 0}
@@ -161,11 +163,11 @@ header .wrap{gap:10px 16px;padding-block:10px;min-height:0}header .btn{margin-le
 </div></div>
 
 <div class="trust"><div class="wrap"><div class="mq"><div id="mq">
-<div class="partner-item"><img src="assets/logos/man-ic-pekalongan.png" alt="MAN Insan Cendekia Pekalongan"></div>
-<div class="partner-item"><img src="assets/logos/pemkot-pekalongan.png" alt="Kelurahan Banyurip, Kota Pekalongan"></div>
-<div class="partner-item"><img src="assets/logos/dlh-pekalongan.png" alt="Dinas Lingkungan Hidup"></div>
-<div class="partner-item"><img src="assets/logos/badan-gizi-nasional.png" alt="Badan Gizi Nasional"></div>
-<div class="partner-item"><img src="assets/logos/poltekkes-kemenkes-jakarta-2.png" alt="Poltekkes Kemenkes Jakarta II"></div>
+<div class="partner-item"><img src="assets/logos/man-ic-pekalongan.png" alt="MAN IC Pekalongan"><span>MAN IC Pekalongan</span></div>
+<div class="partner-item"><img src="assets/logos/pemkot-pekalongan.png" alt="Kelurahan Banyurip, Kota Pekalongan"><span>Kelurahan Banyurip</span></div>
+<div class="partner-item"><img src="assets/logos/dlh-pekalongan.png" alt="Dinas Lingkungan Hidup"><span>DLH Pekalongan</span></div>
+<div class="partner-item"><img src="assets/logos/badan-gizi-nasional.png" alt="Badan Gizi Nasional"><span>Badan Gizi Nasional</span></div>
+<div class="partner-item"><img src="assets/logos/poltekkes-kemenkes-jakarta-2.png" alt="Poltekkes Kemenkes Jakarta II"><span>Poltekkes Kemenkes Jakarta II</span></div>
 </div></div></div></div>
 
 <svg class="diag" viewBox="0 0 1440 130" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,0 1440,0 1440,36 0,100" fill="#072017"/><polygon points="0,100 1440,36 1440,66 0,130" fill="url(#dgr)"/></svg>
